@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1, p {
+    border: 1px solid #ff000048;
+}
+
+h2 {
+    background-color: #bdf53b5a;
+}
+
+p {
+    background-color: rgba(79, 102, 230, 0.545);
+}
+
+a {
+    background-color: #2ddaf177;
+}
+
+#footer .p {
+    background-color: #8f2df1ba;
+}

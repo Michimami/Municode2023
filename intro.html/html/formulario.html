@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es-GT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Juegos de Mesa</title>
+    <style>
+        body {
+            background-color: #A6FD8B;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #CFBBFC;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Juegos de Mesa</h1>
+        <form>
+            <label for="nombre">Nombre del juego:</label>
+            <input type="text" id="nombre" name="Nombre del juego" Escribir el Nombre del juego required>
+
+            <label for="min_personas">Número mínimo de personas:</label>
+            <input type="number" id="min_personas" name="Número mínimo de personas" Escribir el Número mínimo de personas required>
+
+            <label for="max_personas">Número máximo de personas:</label>
+            <input type="number" id="max_personas" name="Número máximo de personas" Escribir el Número máximo de personas required>
+
+            <label for="edad">Edad mínima necesaria:</label>
+            <input type="number" id="edad" name="Edad mínima necesaria" Ecribir la Edad mínima necesaria required>
+
+            <label for="descripcion">Descripción del juego:</label>
+            <textarea id="descripcion" name="Descripción del juego" <holder>Escribir la Descripción del juego</holder> required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+<p> Michelle Aguilar </p>
+</body>
+</html>

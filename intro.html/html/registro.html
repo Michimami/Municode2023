@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widtih=device-width.">
+    <title>Registro de Estudiante</title>
+</head>
+<body>
+    <center><h1>Ingreso de Datos</h1></center>
+    <form action="mensaje.html" method="post">
+        <label> Nombre Completo</label> <input name="nombre"> <type="text" required/> <br>
+
+        <label> Fecha de Nacimiento</label> <input name="fecha"> <type="text" required/> <br>
+
+        <label> Nacionalidad</label> <input type="text"  name="naionalidad" required/> <br>
+
+        <label> Ultimo grado aprobado</label> <input type="text" name="grado" /> <br>
+
+        <label> Sexo</label> <input type="radio" name="sexo" value="H" >Hombre</ input>
+        
+        <label> Sexo</label> <input type="radio" name="sexo" value="M" >Mujer</ input>
+        <br>
+        <label>Modalidad</label>
+        <select name="modalidad" >
+            <option value="presencial">Presencial</option>
+            <option value="virtual">Virtual</option>
+            <option value="hibrido">Hibrido</option>
+        </select>
+        <br>
+        <input type="submit" value="Registrar"/>
+    </form>
+</body>
+</html>

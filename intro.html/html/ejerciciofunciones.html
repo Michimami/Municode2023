@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IVA</title>
+</head>
+<body>
+    <h1>Calculadora de IVA</h1>
+    
+    <label for="monto">Ingrese el monto:</label>
+    <input type="number" id="monto">
+    <button onclick="calcularIVA()">Calcular</button>
+    
+    <p id="resultado"></p>
+
+    <script>
+        function calcularIVA() {
+            const porcentajeIVA = 0.12; // Porcentaje de IVA
+            let monto = document.getElementById("monto").value;
+            let iva = monto * porcentajeIVA;
+            document.getElementById("resultado").innerHTML = "El monto del IVA correspondiente es: " + iva;
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+#titulo {
+    color: tomato;
+}
+
+p.especial {
+    color: mediumseagreen;
+}
+
+p.texto { 
+    color: slateblue;
+}
+
+div p {
+    color: aquamarine;
+}

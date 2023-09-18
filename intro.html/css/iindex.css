@@ -1,0 +1,78 @@
+#titulo {
+    color: tomato;
+}
+
+p.especial {
+    color: mediumspringgreen;
+}
+
+p.texto {
+    color: slateblue;
+}
+
+div p {
+    color: aquamarine;
+}
+
+div h2, h3 { /* esto es un cometario */
+    color: brown;
+}
+
+* {
+    font-size: 24px;
+    color: black;  /* esto es un cometario */
+}
+
+/* esto es un cometario */
+/*
+esto es un comentario
+que tiene
+muuchas
+líneas
+*/
+/*
+.color {
+    color: #f0000;
+}
+.color {
+    color: rgba(0, 255, 255);
+}
+*/
+.color {
+   /* border: 5px red inset;*/
+    /*
+    dotted
+    deshed
+    solid
+    double
+    groove
+    ridge
+    inset
+    outset
+    none
+    hidden
+    */
+    border-style: solid;
+    border-color: blue;
+    border-radius: 5px;
+    border-width: 2rem;
+}
+
+#fondo {
+    background-color: rgba(255, 0, 0);
+    /*opacity: 0.3;*/
+    height: 200px;
+    background: #f00 url(img/michi1.jpg) repeat-y center bottom / 100px 100px;
+    background-size: 100px 100px;
+}
+
+.margen {
+    background-color: chocolate;
+    margin: 15px;
+    padding: 30px 15px 5px;
+    border: solid 1px black;
+    height: 100px;
+    width: 50px;
+    overflow: scroll;
+    outline: 1px solid red;
+}

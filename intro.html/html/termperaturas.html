@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperaturas</title>
+</head>
+<body>
+    <script>
+        var ciudades = new Array(5);
+        var temps = new Array(5);
+
+        for (let i = 0; i < 5; i++) {
+            ciudades[i] = prompt("Ingrese el nombre de la ciudad " + (i+1));
+            temps[i] = parseFloat(prompt("Ingrese la temperatura de la ciudad " + (i+1)));
+        }
+
+        let maxTemp = Math.max(...temps);
+        let ciudadCalurosa = ciudades[temps.indexOf(maxTemp)];       
+
+        let minTemp = Math.min(...temps);
+        let ciudadFria = ciudades[temps.indexOf(minTemp)];       
+
+        let sumaTemps = temps.reduce((a, b) => a + b, 0);
+        let promedio = sumaTemps / temps.length;       
+
+        let ciudadesSobrePromedio = [];
+        for (let i = 0; i < temps.length; i++) {
+            if (temps[i] > promedio) {
+                ciudadesSobrePromedio.push(ciudades[i]);
+            }
+        }
+
+        document.write("<h3>La ciudad más calurosa es: " + ciudadCalurosa + " (" + maxTemp + " grados)</h3>");
+        document.write("<h3>La ciudad más fría es: " + ciudadFria + " (" + minTemp + " grados)</h3>");
+        document.write("<h3>El promedio de temperatura es: " + promedio + " grados</h3>");
+        document.write("<h3>Ciudades por encima del promedio:</h3>");
+        document.write("<ul>");
+
+        for (let i = 0; i < ciudadesSobrePromedio.length; i++) {
+            document.write("<li>" + ciudadesSobrePromedio[i] + "</li>");
+        }
+        
+        document.write("</ul>");
+        
+    </script>
+</body>
+</html>

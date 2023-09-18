@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParrafoA</title>
+</head>
+<body>
+    <p id="parrafoA"></p>
+<script>
+    var parrafoA = document.getElementById("parrafoA");
+    var texto = document.createElement("span");
+    texto.innerText = "Este texto fue creado por medio de DOM. ";
+    var enlace = document.createElement("a");
+
+    enlace.href = "https://www.google.com/";
+    enlace.innerText = "Ir a Google";
+
+    parrafoA.appendChild(texto);
+    parrafoA.appendChild(enlace);
+</script>
+</body>
+</html>

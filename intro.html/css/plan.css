@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    background-image: url(img/michi1.jpg);
+    height: 50px;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilos de la tabla */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(232, 181, 245, 0.389);
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ff000048;
+}
+
+th {
+    background-color: #bdf53b5a;
+}
+
+/* Estilos especiales para celdas */
+td[rowspan] {
+    vertical-align: middle;
+    background-color: #2ddaf177;
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 600px) {
+    table {
+        width: 100%;
+    }
+    
+}

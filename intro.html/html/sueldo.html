@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sueldo</title>
+</head>
+<body>
+    <script>
+       // Pide al usuario que ingrese la calificación
+var calificacion = parseFloat(prompt("Ingrese la calificación del estudiante:"));
+
+// Verifica en qué rango se encuentra la calificación y muestra el mensaje correspondiente
+if (calificacion >= 90 && calificacion <= 100) {
+  console.log("Excelente");
+} else if (calificacion >= 75 && calificacion < 90) {
+  console.log("Muy bien");
+} else if (calificacion >= 65 && calificacion < 75) {
+  console.log("Bien");
+} else {
+  console.log("Reprobado");
+}
+    </script>
+</body>
+</html>

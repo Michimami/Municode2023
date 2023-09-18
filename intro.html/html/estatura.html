@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Estatura</title>
+</head>
+<body>
+    <h1>Calculadora de promedio de Estatura</h1>
+    <script>
+        let totalEstaturas = 0;
+        let cantidadEstaturas = 0;
+
+        do {
+            let estaturaStr = prompt("Ingrese una estatura:");
+            // Verificar si el usuario presionó Cancelar o dejó el campo vacío
+            if (estaturaStr === null || estaturaStr === "") {
+                break;
+            }
+            let estatura = parseFloat(estaturaStr);
+
+            if (!isNaN(estatura)) {
+                totalEstaturas += estatura;
+                cantidadEstaturas++;
+            } else {
+                alert("Por favor, ingrese una estatura válida.");
+            }
+        } while (true);
+
+        if (cantidadEstaturas === 0) {
+            document.write("No se ingresaron estaturas.");
+        } else {
+            const promedio = totalEstaturas / cantidadEstaturas;
+            document.write("Promedio de estaturas ingresadas: " + promedio.toFixed(2) + " centimetros.");
+        }
+    </script>
+</body>
+</html>

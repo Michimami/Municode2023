@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Perímetro</title>
+</head>
+<body>
+    <h1>Calculadora de Perímetro de Círculo</h1>
+    
+    <label for="radio">Ingrese el radio del círculo:</label>
+    <input type="number" id="radio">
+    <button onclick="calcularPerimetro()"> Calcular </button>
+    
+    <p id="resultado"></p>
+
+    <script>
+        const PI = 3.1416;
+
+        function calcularPerimetro() {
+            let radio = document.getElementById("radio").value;
+            let perimetro = 2 * PI * radio;
+            document.getElementById("resultado").innerHTML = "El perímetro es " + perimetro;
+        }
+
+    </script>
+</body>
+</html>

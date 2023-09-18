@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while Caja</title>
+</head>
+<body>
+    <script>
+        let nit = prompt("Ingrese su NIT:");
+        document.write("<ol>");
+        let respuesta = "s";  
+        let subtotal = 0;  
+
+        while(respuesta === "s" ) {
+            let producto = prompt("Ingrese el producto:");
+            let cantidad = parseInt(prompt("Ingrese la cantidad:"));
+            let precioUnitario = parseFloat(prompt("Ingrese el Precio Unitario:"));
+            let subtotalProducto = precioUnitario * cantidad;
+            subtotal += subtotalProducto;
+
+        document.write("</ol>");
+        document.write("<h3> NIT "+nit+"</h3>");
+        document.write("<h3> Subtotal Q"+subtotal.toFixed(2)+"</h3>");
+
+            document.write("<li>"+cantidad+"  "+producto+" Precio unitario Q. "+precioUnitario.toFixed(2)+" Subtotal Q  "+subtotalProducto.toFixed(2)+"</li>");
+            respuesta = prompt("Desea ingresar otro producto n / s");
+
+         }
+    </script>
+</body>
+</html>

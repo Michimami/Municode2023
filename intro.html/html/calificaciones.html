@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<title>Calificaciones</title>
+<body>
+    <h1>Evaluación de Calificaciones</h1>
+        <script>
+        function evaluarCalificacion() {
+            let nota = parseFloat(document.getElementById("nota").value);
+            let mensaje = "";
+            if (isNaN(nota)) {
+                mensaje = "Por favor, ingresa una nota válida.";
+            } else if (nota >= 90 && nota <= 100) {
+                mensaje = "Excelente";
+            } else if (nota >= 75 && nota < 90) {
+                mensaje = "Muy bien";
+            } else if (nota >= 65 && nota < 75) {
+                mensaje = "Bien";
+            } else {
+                mensaje = "Reprobado";
+            }
+            document.getElementById("resultado").innerHTML = "La calificación es: " + mensaje;
+        }
+        </script>
+<label for="nota">Ingresa la nota: </label>
+<input type="number" id="nota">
+<button onclick="evaluarCalificacion()">Evaluar</button>
+<p id="resultado"></p>
+</body>
+</html>
